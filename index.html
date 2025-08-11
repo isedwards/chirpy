@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>T3 splash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Full-screen black page with perfect centering */
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #000;
+      color: darkred; /* dark red for the "T3" text */
+      display: grid;
+      place-items: center; /* centers both horizontally & vertically */
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px; /* space between gif and text */
+      text-align: center;
+    }
+
+    .wrap img {
+      max-width: 40vmin; /* scales nicely on any screen */
+      height: auto;
+      display: block;
+    }
+
+    .label {
+      font-size: clamp(24px, 4vmin, 48px);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img src="T3.gif" alt="Animated graphic" />
+    <div class="label">T<sup>3</sup></div>
+  </div>
+</body>
+</html>
